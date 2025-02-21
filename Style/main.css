@@ -1,0 +1,10 @@
+CustomButton {
+  padding: 10px 10px;
+  font-size: 16px;
+  margin-top: 40px;
+  border: none;
+  crsor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
