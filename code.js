@@ -1,2 +1,3 @@
+sleep(5)
 
-document.getElementById("newsDisplay").innerHTML = "Hello World!"
+document.getElementById("Test").innerHTML = "Hello World!"
