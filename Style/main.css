@@ -1,10 +1,5 @@
 button {
-  padding: 25px 25px;
-  font-size: 16px;
-  margin-top: 40px;
-  border: none;
-  crsor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  color: #fff;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
