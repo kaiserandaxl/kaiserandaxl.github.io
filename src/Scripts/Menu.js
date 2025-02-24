@@ -1,87 +1,103 @@
 export const Menu = {
-        HamburgerBasket: {
-        Price: 8,
-        Name: "Hamburger Basket",
-    },
+    HamburgerBasket: {
+    Price: 8,
+    Name: "Hamburger Basket",
+    UID: "HB"
+},
 
-    HotDogBasket: {
-        Price: 7,
-        Name: "Hot Dog Basket",
-    },
+HotDogBasket: {
+    Price: 7,
+    Name: "Hot Dog Basket",
+    UID: "HDB"
+},
 
-    Hamburger: {
-        Price: 5,
-        Name: "Hamburger",
-    },
+Hamburger: {
+    Price: 5,
+    Name: "Hamburger",
+    UID: "Ham"
+},
 
-    FritoPie: {
-        Price: 5,
-        Name: "Frito Chili Pie",
-    },
+FritoPie: {
+    Price: 5,
+    Name: "Frito Chili Pie",
+    UID: "FCP"
+},
 
-    NachoBoth: {
-        Price: 5,
-        Name: "Nachos Cheese & Chili",
-    },
+NachoBoth: {
+    Price: 5,
+    Name: "Nachos Cheese & Chili",
+    UID: "NB"
+},
 
-    HotDogTop: {
-        Price: 5,
-        Name: "Hotdog w/ Cheese & Chili",
-    },
+HotDogTop: {
+    Price: 5,
+    Name: "Hotdog w/ Cheese & Chili",
+    UID: "HDT"
+},
 
-    NachoOne: {
-        Price: 4,
-        Name: "Nachos Cheese or Chili",
-    },
+NachoOne: {
+    Price: 4,
+    Name: "Nachos Cheese or Chili",
+    UID: "NO"
+},
 
-    HotDog: {
-        Price: 4,
-        Name: "Hotdog Plain",
-    },
+HotDog: {
+    Price: 4,
+    Name: "Hotdog Plain",
+    UID: "HD"
+},
 
-    Candy: {
-        Price: 2,
-        Name: "Candy",
-    },
+Candy: {
+    Price: 2,
+    Name: "Candy",
+    UID: "Candy"
+},
 
-    Chips: {
-        Price: 2,
-        Name: "Chips",
-    },
+Chips: {
+    Price: 2,
+    Name: "Chips",
+    UID: "Chips"
+},
 
-    SodaGaterade: {
-        Price: 2,
-        Name: "Soda/Gatorade",
-    },
+SodaGaterade: {
+    Price: 2,
+    Name: "Soda/Gatorade",
+    UID: "SG"
+},
 
-    Pickle: {
-        Price: 1,
-        Name: "Pickle",
-    },
+Pickle: {
+    Price: 1,
+    Name: "Pickle",
+    UID: "Pickle"
+},
 
-    Water: {
-        Price: 1,
-        Name: "Water",
-    },
+Water: {
+    Price: 1,
+    Name: "Water",
+    UID: "Water"
+},
 
-    HotCocoa: {
-        Price: 1,
-        Name: "Hot Cocoa",
-    },
+HotCocoa: {
+    Price: 1,
+    Name: "Hot Cocoa",
+    UID: "HC"
+},
 
-    Coffee: {
-        Price: 1,
-        Name: "Coffee",
-    },
+Coffee: {
+    Price: 1,
+    Name: "Coffee",
+    UID: "Coffee"
+},
 
-    Popcorn: {
-        Price: 1,
-        Name: "Popcorn",
-    },
+Popcorn: {
+    Price: 1,
+    Name: "Popcorn",
+    UID: "Popcorn"
+},
 
-    Cheese: {
-        Price: 1,
-        Name: "Cheese",
-        UID: "Cheese"
-    }
+Cheese: {
+    Price: 1,
+    Name: "Cheese",
+    UID: "Cheese"
+}
 }

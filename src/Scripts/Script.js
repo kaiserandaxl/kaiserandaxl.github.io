@@ -53,7 +53,7 @@ Register.Init = function() {
 
         Button.innerHTML = `${Data.Name}</br>$${Data.Price}.00`;
         Button.className = "MenuItem";
-        if (Data.UID) {Button.id = Data.UID}
+        Button.id = Data.UID;
         Button.setAttribute("Price", Data.Price);
         Button.setAttribute("Name", Data.Name)
 
@@ -74,14 +74,10 @@ Register.Init = function() {
         i += 1
     }
 
-    alert("test2")
-
     document.getElementById("Cheese").innerHTML = `Cheese</br>50¢`
     document.getElementById("Cheese").setAttribute("Price",0.50)
 
     const Filled = ((APR*Math.ceil(i/APR)-1)-(i-1))
-
-    alert("1")
 
     for (let b = 1; b <= Filled; b++) {
         const Button = document.createElement('button');
@@ -107,8 +103,6 @@ Register.Init = function() {
 
         i += 1
     }
-
-    alert("2")
 
     for (const button of document.getElementsByName("CalcButton")) {
         button.onclick = function() {
