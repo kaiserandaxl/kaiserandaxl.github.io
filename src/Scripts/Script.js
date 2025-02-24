@@ -78,6 +78,8 @@ Register.Init = function() {
 
     const Filled = ((APR*Math.ceil(i/APR)-1)-(i-1))
 
+    alert("1")
+
     for (let b = 1; b <= Filled; b++) {
         const Button = document.createElement('button');
 
@@ -102,6 +104,8 @@ Register.Init = function() {
 
         i += 1
     }
+
+    alert("2")
 
     for (const button of document.getElementsByName("CalcButton")) {
         button.onclick = function() {
