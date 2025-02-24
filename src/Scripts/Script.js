@@ -53,7 +53,7 @@ Register.Init = function() {
 
         Button.innerHTML = `${Data.Name}</br>$${Data.Price}.00`;
         Button.className = "MenuItem";
-        Button.id = (Data.UID || null);
+        if (Data.UID) {Button.id = Data.UID}
         Button.setAttribute("Price", Data.Price);
         Button.setAttribute("Name", Data.Name)
 
