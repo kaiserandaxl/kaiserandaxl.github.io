@@ -1,4 +1,4 @@
-import { menu } from "./Menu.js"
+import { Menu } from "./Menu.js"
 
 const APR = 4;
 const SumLabel = document.getElementById("Total");
