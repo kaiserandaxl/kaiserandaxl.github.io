@@ -73,6 +73,8 @@ Register.Init = function() {
         i += 1
     }
 
+    alert("test2")
+
     document.getElementById("Cheese").innerHTML = `Cheese</br>50¢`
     document.getElementById("Cheese").setAttribute("Price",0.50)
 
