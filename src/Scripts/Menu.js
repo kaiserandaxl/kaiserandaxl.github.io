@@ -82,5 +82,6 @@ export const Menu = {
     Cheese: {
         Price: 1,
         Name: "Cheese",
+        UID: "Cheese"
     }
 }
