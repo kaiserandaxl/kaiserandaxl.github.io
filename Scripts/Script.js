@@ -1,5 +1,4 @@
 import { Menu } from "./Menu.js";
-import { Colors } from "../Style/Styles";
 
 const APR = 4;
 const SumLabel = document.getElementById("Total");
