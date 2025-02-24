@@ -117,8 +117,9 @@ Register.Init = function() {
         Total = 0;
         AmountGiven = 0;
         CalcLabel.innerHTML = 0;
-        History.innerHTML = null
-        UpdateTotals()
+        History.innerHTML = null;
+        LastSelected = null;
+        UpdateTotals();
     }
 }
 
