@@ -100,7 +100,9 @@ const Menu = {
         Name: "Cheese",
         UID: "Cheese"
     }
-}
+};
+
+alert("Yes")
 
 const APR = 4;
 const SumLabel = document.getElementById("Total");
