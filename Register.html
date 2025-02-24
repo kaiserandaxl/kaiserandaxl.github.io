@@ -4,7 +4,155 @@
   <meta name="viewport" content="width=device-width,
     initial-scale=1.0"/>
   
-  <link rel="stylesheet" href="./Styles/Style.css">
+  <style>
+     .MenuItem {
+      position: fixed;
+      width: 175px;
+      height: 100px;
+      font-size: 20px;
+      border-radius: 0px;
+      border-width: 1px;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px;
+      -webkit-border-width: 1px;
+      -webkit-text-fill-color: rgb(0 0 0);
+    }
+
+    .Total {
+      position: fixed;
+      width: 130px;
+      height: 50;
+      margin-top: 12.5px;
+      margin-left: 25px;
+      font-family: 'Roboto Medium', sans-serif;
+      font-size: 30px;
+      color: rgb(255,255,255);
+      background-color: rgb(50,50,50);
+      text-align: center;
+      border-radius: 12px
+    }
+
+    .Clear {
+      position: fixed;
+      width: 150px;
+      height: 50;
+      margin-top: 12.5px;
+      margin-left: 175px;
+      font-family: 'Roboto Medium', sans-serif;
+      font-size: 30px;
+      color: rgb(255,255,255);
+      background-color: rgb(150,50,50);
+      text-align: center;
+      border-radius: 12px;
+      border-width: 0px;
+    }
+
+    .Change {
+      position: fixed;
+      width: 130px;
+      height: 50;
+      bottom: 12.5px;
+      right: 25px;
+      font-family: 'Roboto Medium', sans-serif;
+      font-size: 30px;
+      color: rgb(255,255,255);
+      background-color: rgb(50,50,50);
+      text-align: center;
+      border-radius: 12px
+    }
+
+    .Taskbar {
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 75px;
+      background-color: rgb(0,0,0);
+      line-height: 50px;
+    }
+
+    .Calculator {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      height: 301px;
+      width: 339px;
+      background-color: rgb(125,125,125);
+    }
+
+    .CalcDisplay {
+      position: relative;
+      top: 9px;
+      left: 9px;
+      width: 321px;
+      height: 74px;
+      background-color: rgb(215,215,215);
+      line-height: 75px;
+    }
+
+    .Numbers {
+      position: relative;
+      top: 18px;
+      left: 9px;
+      height: 199px;
+      width: 321px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: rgb(125,125,125);
+      padding: 0px;
+      line-height: 100px;
+    }
+
+    .Numbers > button {
+      background-color: #f1f1f1;
+      border: 1px solid black;
+      font-size: 30px;
+      text-align: center;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px;
+      -webkit-border-width: 1px;
+      -webkit-text-fill-color: rgb(0 0 0);
+    }
+
+    .CalcNum {
+      position: fixed;
+      width: 321px;
+      height: 74px;
+      font-family: 'Roboto Medium', sans-serif;
+      font-size: 40px;
+      color: rgb(0,0,0);
+      text-align: center;
+      border-radius: 0px;
+    }
+
+    .History {
+      position: fixed;
+      right: 10px;
+      top: 322px;
+      width: 339px;
+      height: 333px;
+      display: grid;
+      grid-template-columns: auto;
+      grid-auto-rows: 30px;
+      padding: 0px;
+      line-height: 25px;
+      overflow-y: auto;
+    }
+
+    .History > button {
+      background-color: #f1f1f1;
+      border: 1px solid black;
+      font-size: 23px;
+      text-align: left;
+      background-color: rgb(255 255 255);
+      border-width: 0px;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px;
+      -webkit-border-width: 0px;
+      -webkit-text-fill-color: rgb(0 0 0);
+      grid-column-start: 1;
+    }
+  </style>
 </head>
 
 <body>
