@@ -94,6 +94,7 @@ Register.Init = function() {
             if (LastSelected) {
                 for (let t = 1; t <= b; t++) {
                     Total += Number(LastSelected.getAttribute("Price"));
+                    LastSelected = null
 
                     NewHistory(`+ ${LastSelected.getAttribute("Name")}`, LastSelected.getAttribute("Price"))
                     UpdateTotals();
