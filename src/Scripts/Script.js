@@ -10,6 +10,7 @@ var Total = 0;
 var AmountGiven = 0;
 var Register = {};
 var LastSelected = null;
+var Multiplier = null;
 
 const UpdateTotals = function() {
     if (Number.isInteger(Total)) {
@@ -64,11 +65,21 @@ Register.Init = function() {
         document.body.appendChild(Button);
 
         Button.onclick = function() {
-            Total += Number(Button.getAttribute("Price"));
-            LastSelected = Button
+            if (Multiplier) {
+                for (let b=1; b<=Multiplier; b++) {
+                    Total += Number(Button.getAttribute("Price"));
+                    
+                    NewHistory(`+ ${Button.getAttribute("Name")}`, Button.getAttribute("Price"))
+                    UpdateTotals();
+                }
+                Multiplier = null
+            } else {
+                Total += Number(Button.getAttribute("Price"))
+                LastSelected = Button
 
-            NewHistory(`+ ${Button.getAttribute("Name")}`, Button.getAttribute("Price"))
-            UpdateTotals();
+                NewHistory(`+ ${Button.getAttribute("Name")}`, Button.getAttribute("Price"))
+                UpdateTotals()
+            }
         }
         
         i += 1
@@ -99,6 +110,8 @@ Register.Init = function() {
                     UpdateTotals();
                     setTimeout(function(){LastSelected=null},1)
                 }
+            } else {
+                Multiplier = b+1
             }
         }
 
