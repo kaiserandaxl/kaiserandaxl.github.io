@@ -96,8 +96,8 @@ Register.Init = function() {
                     Total += Number(LastSelected.getAttribute("Price"));
 
                     NewHistory(`+ ${LastSelected.getAttribute("Name")}`, LastSelected.getAttribute("Price"))
-                    LastSelected = null
                     UpdateTotals();
+                    setTimeout(function(){LastSelected=null},1)
                 }
             }
         }
