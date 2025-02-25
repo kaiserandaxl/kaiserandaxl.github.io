@@ -94,9 +94,9 @@ Register.Init = function() {
             if (LastSelected) {
                 for (let t = 1; t <= b; t++) {
                     Total += Number(LastSelected.getAttribute("Price"));
-                    LastSelected = null
 
                     NewHistory(`+ ${LastSelected.getAttribute("Name")}`, LastSelected.getAttribute("Price"))
+                    LastSelected = null
                     UpdateTotals();
                 }
             }
@@ -112,6 +112,12 @@ Register.Init = function() {
 
             UpdateTotals()
         }
+    }
+
+    document.getElementById("Reset").onclick = function() {
+        AmountGiven = 0;
+        CalcLabel.innerHTML = 0;
+        UpdateTotals();
     }
 
     document.getElementById("Clear").onclick = function() {
