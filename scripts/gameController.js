@@ -795,10 +795,7 @@ function keyDownHandler(e) {
     }
     if (e.keyCode === 70) {
         input.f = true;
-        mouse.rightdown = true;
-        setTimeout(function() {
-            mouse.rightdown = false;
-        }, 50);
+        mouse.rightdown = !mouse.rightdown;
     }
     if (editmode === true) {
         if (e.keyCode === 90) {
