@@ -795,7 +795,7 @@ function keyDownHandler(e) {
     }
     if (e.keyCode === 70) {
         input.f = true;
-        mouse.rightdown = !mouse.rightdown;
+        mouse.rightdown = true;
     }
     if (editmode === true) {
         if (e.keyCode === 90) {
@@ -832,6 +832,7 @@ function keyUpHandler(e) {
     }
     if (e.keyCode === 70) {
         input.f = false;
+        mouse.rightdown = false;
     }
 }
 
